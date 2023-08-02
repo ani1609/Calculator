@@ -14,18 +14,20 @@ body
 	justify-content: flex-start;
 	align-items: center;
     gap: 50px;
+	box-sizing: border-box;
+	padding: 20px;
 }
 
 h1
 {
     color: #09203F;
-    margin-top: 20px;
     text-align: center;
 }
 
 .calculator 
 {
-	width: 400px;
+	width: 100%;
+	max-width: 400px;
 	background-color: #09203F;
 	padding: 50px 30px;
 	border-radius: 8px;
@@ -86,4 +88,12 @@ h1
 #zero
 {
 	grid-column: span 2;
+}
+
+@media screen and (max-width: 480px) 
+{
+	.buttons 
+	{
+		grid-gap: 10px;
+	}
 }
